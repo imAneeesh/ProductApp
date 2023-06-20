@@ -1,12 +1,11 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors');
 
 const Product = require('./products')
 
 const app = express()
-const port = 4000
+const port = process.env.PORT || 4000
 
 // app.use(bodyParser.json())
 app.use(cors());
